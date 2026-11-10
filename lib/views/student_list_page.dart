@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'student_detail_page.dart';
 
 class StudentModel {
@@ -19,10 +20,30 @@ class StudentListPage extends StatelessWidget {
   const StudentListPage({super.key});
 
   final List<StudentModel> students = const [
-    StudentModel(name: 'Ali Tan', matricNumber: 'S12345', programme: 'Software Engineering', email: 'ali@uni.edu.my'),
-    StudentModel(name: 'Sara Lee', matricNumber: 'S12346', programme: 'Software Engineering', email: 'sara@uni.edu.my'),
-    StudentModel(name: 'John Lim', matricNumber: 'S12347', programme: 'Network Computing', email: 'john@uni.edu.my'),
-    StudentModel(name: 'Aina Rahman', matricNumber: 'S12348', programme: 'Information Systems', email: 'aina@uni.edu.my'),
+    StudentModel(
+      name: 'Ali Tan',
+      matricNumber: 'S12345',
+      programme: 'Software Engineering',
+      email: 'ali@uni.edu.my',
+    ),
+    StudentModel(
+      name: 'Sara Lee',
+      matricNumber: 'S12346',
+      programme: 'Software Engineering',
+      email: 'sara@uni.edu.my',
+    ),
+    StudentModel(
+      name: 'John Lim',
+      matricNumber: 'S12347',
+      programme: 'Network Computing',
+      email: 'john@uni.edu.my',
+    ),
+    StudentModel(
+      name: 'Aina Rahman',
+      matricNumber: 'S12348',
+      programme: 'Information Systems',
+      email: 'aina@uni.edu.my',
+    ),
   ];
 
   @override

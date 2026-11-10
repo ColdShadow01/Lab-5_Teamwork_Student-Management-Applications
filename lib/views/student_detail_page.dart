@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'student_list_page.dart';
 
 class StudentDetailPage extends StatelessWidget {
@@ -18,23 +19,38 @@ class StudentDetailPage extends StatelessWidget {
             Center(
               child: CircleAvatar(
                 radius: 40,
-                child: Text(student.name[0], style: const TextStyle(fontSize: 32)),
+                child: Text(
+                  student.name[0],
+                  style: const TextStyle(fontSize: 32),
+                ),
               ),
             ),
             const SizedBox(height: 20),
-            Text(student.name, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+            Text(
+              student.name,
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
             const Divider(),
             const SizedBox(height: 10),
-            const Text('Programme:', style: TextStyle(fontWeight: FontWeight.bold)),
+            const Text(
+              'Programme:',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             Text(student.programme),
             const SizedBox(height: 15),
-            const Text('Matric Number (Selectable):', style: TextStyle(fontWeight: FontWeight.bold)),
+            const Text(
+              'Matric Number (Selectable):',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             SelectableText(
               student.matricNumber,
               style: const TextStyle(color: Colors.blue, fontSize: 16),
             ),
             const SizedBox(height: 15),
-            const Text('Email Address (Selectable):', style: TextStyle(fontWeight: FontWeight.bold)),
+            const Text(
+              'Email Address (Selectable):',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             SelectableText(
               student.email,
               style: const TextStyle(color: Colors.blue, fontSize: 16),

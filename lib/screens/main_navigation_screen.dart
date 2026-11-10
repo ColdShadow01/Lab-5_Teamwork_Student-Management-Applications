@@ -23,8 +23,8 @@ class MainNavigationScreen extends StatelessWidget {
       const Center(
         child: Text('Student Records Page (Member 3)'),
       ), // Replace later
-        const Center(child: Text('Programmes Page (Member 4)')),// Replace later
-        const Center(child: Text('About Page (Member 5)')), // Replace later
+      const Center(child: Text('Programmes Page (Member 4)')), // Replace later
+      const Center(child: Text('About Page (Member 5)')), // Replace later
     ];
 
     return Scaffold(

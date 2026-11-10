@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import '../providers/navigation_provider.dart';
 import '../widgets/app_drawer.dart';
 import 'home_page.dart';
-import '../views/student_list_page.dart';
 
 class MainNavigationScreen extends StatelessWidget {
   const MainNavigationScreen({super.key});
@@ -19,7 +18,9 @@ class MainNavigationScreen extends StatelessWidget {
     // List of pages (Teammates will replace the Placeholders with their actual pages)
     final List<Widget> pages = [
       const HomePage(),
-      const StudentListPage(),
+      const Center(
+        child: Text('Student Info Page (Member 2)'),
+      ), // Replace later
       const Center(
         child: Text('Student Records Page (Member 3)'),
       ), // Replace later

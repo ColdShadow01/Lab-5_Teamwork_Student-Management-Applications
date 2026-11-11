@@ -145,6 +145,7 @@ class _StudentRecordsScreenState extends State<StudentRecordsScreen> {
                           child: DataTable(
                             sortColumnIndex: _sortColumnIndex,
                             sortAscending: _isAscending,
+                            columnSpacing: 18.0,
                             headingRowColor: WidgetStateProperty.all(
                               Theme.of(context).colorScheme.primaryContainer
                                   .withValues(alpha: 0.4),

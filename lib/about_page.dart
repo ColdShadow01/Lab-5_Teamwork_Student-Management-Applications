@@ -22,9 +22,7 @@ class AboutPage extends StatelessWidget {
                   width: double.infinity,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage(
-                        'assets/images/wallpaper.jpg',
-                      ),
+                      image: AssetImage('assets/images/wallpaper.jpg'),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -33,9 +31,7 @@ class AboutPage extends StatelessWidget {
                 // Dark overlay
                 Container(
                   height: 220,
-                  color: Colors.black.withValues(
-                    alpha: 0.20,
-                  ),
+                  color: Colors.black.withValues(alpha: 0.20),
                 ),
 
                 // StudentHub title
@@ -43,8 +39,7 @@ class AboutPage extends StatelessWidget {
                   left: 20,
                   bottom: 70,
                   child: Column(
-                    crossAxisAlignment:
-                    CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "StudentHub",
@@ -57,10 +52,7 @@ class AboutPage extends StatelessWidget {
                       SizedBox(height: 5),
                       Text(
                         "Student Management Application",
-                        style: TextStyle(
-                          color: Colors.white70,
-                          fontSize: 14,
-                        ),
+                        style: TextStyle(color: Colors.white70, fontSize: 14),
                       ),
                     ],
                   ),
@@ -73,16 +65,11 @@ class AboutPage extends StatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      border: Border.all(
-                        color: Colors.white,
-                        width: 4,
-                      ),
+                      border: Border.all(color: Colors.white, width: 4),
                     ),
                     child: const CircleAvatar(
                       radius: 50,
-                      backgroundImage: AssetImage(
-                        'assets/images/profile.jpg',
-                      ),
+                      backgroundImage: AssetImage('assets/images/profile.jpg'),
                     ),
                   ),
                 ),
@@ -95,32 +82,23 @@ class AboutPage extends StatelessWidget {
             // NAME SECTION
             // ======================================
             const Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: 20,
-              ),
+              padding: EdgeInsets.symmetric(horizontal: 20),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
                   "AliCat",
-                  style: TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
                 ),
               ),
             ),
 
             const Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: 20,
-              ),
+              padding: EdgeInsets.symmetric(horizontal: 20),
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
                   "102345@studenthut.edu",
-                  style: TextStyle(
-                    color: Colors.grey,
-                  ),
+                  style: TextStyle(color: Colors.grey),
                 ),
               ),
             ),
@@ -131,61 +109,37 @@ class AboutPage extends StatelessWidget {
             // PERSONAL DETAILS CARD
             // ======================================
             Container(
-              margin: const EdgeInsets.symmetric(
-                horizontal: 16,
-              ),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius:
-                BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withValues(
-                      alpha: 0.05,
-                    ),
+                    color: Colors.black.withValues(alpha: 0.05),
                     blurRadius: 10,
                   ),
                 ],
               ),
               child: Column(
-                crossAxisAlignment:
-                CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
                     "Personal Details",
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
 
                   const SizedBox(height: 15),
 
-                  _detailRow(
-                    "Full Name",
-                    "Muhammad Ali",
-                  ),
+                  _detailRow("Full Name", "Muhammad Ali"),
 
-                  _detailRow(
-                    "Matric Number",
-                    "102345",
-                  ),
+                  _detailRow("Matric Number", "102345"),
 
-                  _detailRow(
-                    "Programme",
-                    "Software Engineering",
-                  ),
+                  _detailRow("Programme", "Software Engineering"),
 
-                  _detailRow(
-                    "Group",
-                    "G01 T10",
-                  ),
+                  _detailRow("Group", "G01 T10"),
 
-                  _detailRow(
-                    "University",
-                    "UNIMAS",
-                  ),
+                  _detailRow("University", "UNIMAS"),
                 ],
               ),
             ),
@@ -196,62 +150,49 @@ class AboutPage extends StatelessWidget {
             // ABOUT APP CARD
             // ======================================
             Container(
-              margin: const EdgeInsets.symmetric(
-                horizontal: 16,
-              ),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius:
-                BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withValues(
-                      alpha: 0.05,
-                    ),
+                    color: Colors.black.withValues(alpha: 0.05),
                     blurRadius: 10,
                   ),
                 ],
               ),
               child: const Column(
-                crossAxisAlignment:
-                CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     "About StudentHut",
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
 
                   SizedBox(height: 12),
 
                   Text(
                     "StudentHut is a Student Management System "
-                        "student management application "
-                        "developed for TMA3084 Software "
-                        "Engineering Lab. It provides "
-                        "student information management, "
-                        "records tracking, programme "
-                        "categorisation and navigation "
-                        "through a modern interface.",
+                    "student management application "
+                    "developed for TMA3084 Software "
+                    "Engineering Lab. It provides "
+                    "student information management, "
+                    "records tracking, programme "
+                    "categorisation and navigation "
+                    "through a modern interface.",
                   ),
 
                   SizedBox(height: 15),
 
                   Text(
                     "Version: 1.0",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.w600),
                   ),
 
                   SizedBox(height: 5),
 
-                  Text(
-                    "Developed using Flutter & Dart Programming",
-                  ),
+                  Text("Developed using Flutter & Dart Programming"),
                 ],
               ),
             ),
@@ -263,13 +204,9 @@ class AboutPage extends StatelessWidget {
     );
   }
 
-  Widget _detailRow(
-      String label,
-      String value,
-      ) {
+  Widget _detailRow(String label, String value) {
     return Padding(
-      padding:
-      const EdgeInsets.symmetric(vertical: 8),
+      padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
         children: [
           SizedBox(
@@ -282,9 +219,7 @@ class AboutPage extends StatelessWidget {
               ),
             ),
           ),
-          Expanded(
-            child: Text(value),
-          ),
+          Expanded(child: Text(value)),
         ],
       ),
     );

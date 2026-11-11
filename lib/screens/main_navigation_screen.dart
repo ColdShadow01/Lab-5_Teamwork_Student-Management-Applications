@@ -15,7 +15,7 @@ class MainNavigationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // Rebuilds only when the navigation index changes
     final currentIndex = context.select<NavigationProvider, int>(
-          (p) => p.currentIndex,
+      (p) => p.currentIndex,
     );
 
     // Pages displayed in Bottom Navigation
@@ -23,9 +23,7 @@ class MainNavigationScreen extends StatelessWidget {
       const HomePage(),
       const StudentListPage(),
       const StudentRecordsScreen(),
-      const Center(
-        child: Text('Programmes Page (Member 4)'),
-      ),
+      const Center(child: Text('Programmes Page (Member 4)')),
       const AboutPage(),
     ];
 
@@ -33,19 +31,13 @@ class MainNavigationScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'StudentHub',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        backgroundColor:
-        Theme.of(context).colorScheme.primaryContainer,
+        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
       drawer: const AppDrawer(),
-      body: IndexedStack(
-        index: currentIndex,
-        children: pages,
-      ),
+      body: IndexedStack(index: currentIndex, children: pages),
       bottomNavigationBar: NavigationBar(
         selectedIndex: currentIndex,
         onDestinationSelected: (index) {

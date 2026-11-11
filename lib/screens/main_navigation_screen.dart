@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'programme_category_page.dart';
+
 import '../providers/navigation_provider.dart';
 import '../widgets/app_drawer.dart';
 import 'home_page.dart';
@@ -22,7 +24,7 @@ class MainNavigationScreen extends StatelessWidget {
       const HomePage(),
       const StudentListPage(),
       const StudentRecordsScreen(),
-      const Center(child: Text('Programmes Page (Member 4)')), // Replace later
+      const ProgrammeCategoryPage(), // Replace later
       const Center(child: Text('About Page (Member 5)')), // Replace later
     ];
 

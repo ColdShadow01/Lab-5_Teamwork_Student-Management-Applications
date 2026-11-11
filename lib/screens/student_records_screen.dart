@@ -147,7 +147,7 @@ class _StudentRecordsScreenState extends State<StudentRecordsScreen> {
                             sortAscending: _isAscending,
                             headingRowColor: WidgetStateProperty.all(
                               Theme.of(context).colorScheme.primaryContainer
-                                  .withOpacity(0.4),
+                                  .withValues(alpha: 0.4),
                             ),
                             columns: [
                               DataColumn(

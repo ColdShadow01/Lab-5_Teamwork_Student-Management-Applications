@@ -3,8 +3,10 @@ import 'package:provider/provider.dart';
 
 import '../providers/navigation_provider.dart';
 import '../widgets/app_drawer.dart';
-import 'home_page.dart';
 import '../about_page.dart';
+import '../views/student_list_page.dart';
+import 'home_page.dart';
+import 'student_records_screen.dart';
 
 class MainNavigationScreen extends StatelessWidget {
   const MainNavigationScreen({super.key});
@@ -13,33 +15,37 @@ class MainNavigationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // Rebuilds only when the navigation index changes
     final currentIndex = context.select<NavigationProvider, int>(
-      (p) => p.currentIndex,
+          (p) => p.currentIndex,
     );
 
-    // List of pages (Teammates will replace the Placeholders with their actual pages)
+    // Pages displayed in Bottom Navigation
     final List<Widget> pages = [
       const HomePage(),
+      const StudentListPage(),
+      const StudentRecordsScreen(),
       const Center(
-        child: Text('Student Info Page (Member 2)'),
-      ), // Replace later
-      const Center(
-        child: Text('Student Records Page (Member 3)'),
-      ), // Replace later
-      const Center(child: Text('Programmes Page (Member 4)')), // Replace later
-      const AboutPage(), //done feature/103516
+        child: Text('Programmes Page (Member 4)'),
+      ),
+      const AboutPage(),
     ];
 
     return Scaffold(
       appBar: AppBar(
         title: const Text(
           'StudentHub',
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
         ),
         centerTitle: true,
-        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
+        backgroundColor:
+        Theme.of(context).colorScheme.primaryContainer,
       ),
       drawer: const AppDrawer(),
-      body: IndexedStack(index: currentIndex, children: pages),
+      body: IndexedStack(
+        index: currentIndex,
+        children: pages,
+      ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: currentIndex,
         onDestinationSelected: (index) {

@@ -5,7 +5,6 @@ import 'programme_category_page.dart';
 
 import '../providers/navigation_provider.dart';
 import '../widgets/app_drawer.dart';
-import '../about_page.dart';
 import '../views/student_list_page.dart';
 import 'home_page.dart';
 import 'student_records_screen.dart';

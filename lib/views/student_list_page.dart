@@ -44,12 +44,19 @@ class StudentListPage extends StatelessWidget {
       programme: 'Information Systems',
       email: 'aina@uni.edu.my',
     ),
+
+    StudentModel(
+      name: 'David Ng.',
+      matricNumber: 'S12349',
+      programme: 'Software Engineering',
+      email: 'david@uni.edu.my',
+    ),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Student Information')),
+      appBar: AppBar(title: const Text('MODEL STUDENT INFORMATION')),
       body: ListView.builder(
         itemCount: students.length,
         itemBuilder: (context, index) {

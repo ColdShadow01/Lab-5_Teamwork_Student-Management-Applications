@@ -8,6 +8,7 @@ import '../widgets/app_drawer.dart';
 import '../views/student_list_page.dart';
 import 'home_page.dart';
 import 'student_records_screen.dart';
+import 'about_page_screen.dart';
 
 class MainNavigationScreen extends StatelessWidget {
   const MainNavigationScreen({super.key});
@@ -25,7 +26,7 @@ class MainNavigationScreen extends StatelessWidget {
       const StudentListPage(),
       const StudentRecordsScreen(),
       const ProgrammeCategoryPage(), // Replace later
-      const Center(child: Text('About Page (Member 5)')), // Replace later
+      const AboutPage(), // Replace later
     ];
 
     return Scaffold(

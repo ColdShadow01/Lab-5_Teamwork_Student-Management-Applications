@@ -84,7 +84,7 @@ class HomePage extends StatelessWidget {
                 context,
                 Icons.menu_book,
                 'Programmes',
-                '3',
+                '4',
                 Colors.orange,
               ),
               _buildStatCard(

@@ -48,7 +48,7 @@ class StudentListPage extends StatelessWidget {
     StudentModel(
       name: 'David Ng.',
       matricNumber: 'S12349',
-      programme: 'Multimedia Computing',
+      programme: 'Software Engineering',
       email: 'david@uni.edu.my',
     ),
   ];

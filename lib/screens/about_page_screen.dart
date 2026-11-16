@@ -174,13 +174,13 @@ class AboutPage extends StatelessWidget {
 
                   Text(
                     "StudentHut is a Student Management System "
-                        "student management application "
-                        "developed for TMA3084 Software "
-                        "Engineering Lab. It provides "
-                        "student information management, "
-                        "records tracking, programme "
-                        "categorisation and navigation "
-                        "through a modern interface.",
+                    "student management application "
+                    "developed for TMA3084 Software "
+                    "Engineering Lab. It provides "
+                    "student information management, "
+                    "records tracking, programme "
+                    "categorisation and navigation "
+                    "through a modern interface.",
                   ),
 
                   SizedBox(height: 15),

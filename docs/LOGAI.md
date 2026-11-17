@@ -42,3 +42,26 @@ The implementation was submitted via Pull Request by Member 1 (Wan - 103014) and
 
 ### Conclusion
 The AI-assisted layout constraints and Dart syntax updates allowed Member 3 to achieve complete rubric compliance for the Student Records page, pass all automated GitHub Actions CI workflow checks, and resolve merge conflicts smoothly.
+
+
+## 5. Development Context
+- **Task Objective:** Implement the Category / Programme Page (`programme_category_page.dart`) to organize student data into specific academic tabs using `DefaultTabController`, `TabBar`, and `TabBarView`.
+- **AI Prompt Used:**
+  > "Write a Flutter screen using DefaultTabController and TabBar that watches a Provider list of students. It needs to filter the students into three tabs based on their academic programme: 'Software Engineering', 'Network Computing', and 'Computational Science'. Ensure it handles empty states if no students are in a category."
+
+## 6. Tool Evaluation & Comparison
+
+| Criteria | ChatGPT Codex | Gemini |
+| :--- | :--- | :--- |
+| **Requirements Adherence** | Missed the `DefaultTabController` requirement and manually initialized a `TabController` inside a `StatefulWidget`. | Full adherence. Used `DefaultTabController` wrapping a `Column` with `TabBar` and `TabBarView`. |
+| **Code Readability** | Slightly bloated due to manual controller disposal and `initState` boilerplate. | Clean, concise, and implemented as a stateless widget watching the `StudentProvider`. |
+| **State Management** | Passed static lists rather than actively watching the shared Provider state. | Correctly utilized `context.watch<StudentProvider>().students` to dynamically filter the lists. |
+| **Null Safety & Edge Cases** | Did not handle empty list states well (UI would just show blank). | Included a fallback `Center(child: Text('No enrolled students'))` for empty categories. |
+| **Corrections Needed** | Had to rewrite the state management integration entirely to fit our app architecture. | Minor styling adjustments to match our global `ThemeData` colors. |
+
+## 7. Accepted Changes & Decision
+Our group accepted the **Gemini** implementation for the `programme_category_page.dart` layout. The AI successfully adhered to the specific widget requirements (`DefaultTabController`) from Lab Exercise 5.1 and accurately integrated with our shared `StudentProvider`.
+
+We rejected the ChatGPT version because it introduced unnecessary boilerplate by forcing a `StatefulWidget` when a `StatelessWidget` with `DefaultTabController` was much more efficient for our use case.
+
+**Peer Review:** The generated code was committed to the feature branch and submitted via Pull Request, where it was reviewed for null safety and unnecessary rebuilds before merging into `main`.

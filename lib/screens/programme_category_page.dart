@@ -73,10 +73,10 @@ class ProgrammeCategoryPage extends StatelessWidget {
   Widget build(BuildContext context) {
     // Programmes matching Member 3's student dataset
     const List<String> programmes = [
-      'Software Engineering',
-      'Network Computing',
-      'Information Systems',
-      'Multimedia Computing',
+      'SE Programme',
+      'NC Programme',
+      'IS Programme',
+      'MC Programme',
     ];
 
     return DefaultTabController(

@@ -145,7 +145,7 @@ class _StudentRecordsScreenState extends State<StudentRecordsScreen> {
                           child: DataTable(
                             sortColumnIndex: _sortColumnIndex,
                             sortAscending: _isAscending,
-                            columnSpacing: 18.0,
+                            columnSpacing: 15.0,
                             headingRowColor: WidgetStateProperty.all(
                               Theme.of(context).colorScheme.primaryContainer
                                   .withValues(alpha: 0.4),
@@ -166,7 +166,7 @@ class _StudentRecordsScreenState extends State<StudentRecordsScreen> {
                               ),
                               const DataColumn(
                                 label: Text(
-                                  'Matric No',
+                                  'NO. Matric',
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 ),
                               ),

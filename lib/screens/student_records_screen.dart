@@ -116,7 +116,7 @@ class _StudentRecordsScreenState extends State<StudentRecordsScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Student Records',
+              'Student Academic Records',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),

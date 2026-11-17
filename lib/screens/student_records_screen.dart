@@ -30,7 +30,7 @@ class _StudentRecordsScreenState extends State<StudentRecordsScreen> {
     StudentRecord(
       name: 'Ali Tan',
       matricNo: 'S12345',
-      programme: '',
+      programme: 'Software Engineering',
       cgpa: 3.90,
     ),
     StudentRecord(
@@ -54,7 +54,7 @@ class _StudentRecordsScreenState extends State<StudentRecordsScreen> {
     StudentRecord(
       name: 'David Ng',
       matricNo: 'S12349',
-      programme: 'Network Computing',
+      programme: 'Software Engineering',
       cgpa: 3.50,
     ),
     StudentRecord(
@@ -116,7 +116,7 @@ class _StudentRecordsScreenState extends State<StudentRecordsScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Student Records Academia',
+              'Students Academic Record',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),

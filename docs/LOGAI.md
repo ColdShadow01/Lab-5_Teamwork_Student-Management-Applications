@@ -43,7 +43,6 @@ The implementation was submitted via Pull Request by Member 1 (Wan - 103014) and
 ### Conclusion
 The AI-assisted layout constraints and Dart syntax updates allowed Member 3 to achieve complete rubric compliance for the Student Records page, pass all automated GitHub Actions CI workflow checks, and resolve merge conflicts smoothly.
 
-
 ## 5. Development Context
 - **Task Objective:** Implement the Category / Programme Page (`programme_category_page.dart`) to organize student data into specific academic tabs using `DefaultTabController`, `TabBar`, and `TabBarView`.
 - **AI Prompt Used:**

@@ -143,9 +143,18 @@ class _StudentRecordsScreenState extends State<StudentRecordsScreen> {
                             minWidth: constraints.maxWidth,
                           ),
                           child: DataTable(
+                            dataTextStyle: const TextStyle(
+                              fontSize: 12,
+                              color: Colors.black87,
+                            ), // Shrinks the row text
+                            headingTextStyle: const TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                            ), // Shrinks the header text
+                            columnSpacing: 10.0,
                             sortColumnIndex: _sortColumnIndex,
                             sortAscending: _isAscending,
-                            columnSpacing: 15.0,
                             headingRowColor: WidgetStateProperty.all(
                               Theme.of(context).colorScheme.primaryContainer
                                   .withValues(alpha: 0.4),

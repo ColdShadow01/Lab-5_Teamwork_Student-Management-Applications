@@ -56,7 +56,7 @@ class StudentListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('MODEL STUDENT INFORMATION')),
+      appBar: AppBar(title: const Text('STUDENT INFORMATION')),
       body: ListView.builder(
         itemCount: students.length,
         itemBuilder: (context, index) {
